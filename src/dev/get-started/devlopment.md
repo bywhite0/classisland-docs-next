@@ -4,14 +4,23 @@
 
 **首先确保您的系统满足以下要求：**
 
-- Windows 10 1803 及以上的操作系统，x86_64 架构
+- Windows 10 1803 及以上的操作系统，x86_64 或 ARM 架构
+- macOS Catalina 10.15 及以上的操作系统
 
-要在本地进行开发，**您需要安装以下负载和工具**：
+对于 Windows PC ，要在本地进行开发，**您需要安装以下负载和工具**：
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/)，包括【.NET 桌面开发】工作负载
 - [Git](https://git-scm.com/)
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
+
+对于 Mac ，要在本地进行开发，**您需要安装以下负载和工具**：
+
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
+- [Visual Studio Code](https://code.visualstudio.com) 或 [JetBrains Rider](https://www.jetbrains.com/zh-cn/rider/)
+- [Xcode 及命令行工具](https://developer.apple.com/cn/xcode/resources/)
+- .NET macOS 工作负荷
+- [Git](https://git-scm.com/)
 
 ## 拉取代码
 
@@ -51,10 +60,10 @@ git submodule update --init --recursive
 
 ## 编译与运行
 
-在首次编译运行时，需要先手动构建一次。
+对于 Windows PC ，在首次编译运行时，需要先手动构建一次。
 
 > [!caution]
-> 请务必使用 Powershell Core（`pwsh.exe`）运行相关脚本，而不是使用系统内置的 Powershell（`powershell.exe`）。一般情况下 Windows 不会预装前者，所以您还需要手动安装 Powershell Core。
+> 在 Windows PC 上，请务必使用 Powershell Core（`pwsh.exe`）运行相关脚本，而不是使用系统内置的 Powershell（`powershell.exe`）。一般情况下 Windows 不会预装前者，所以您还需要手动安装 Powershell Core。
 
 在 **Powershell Core** 运行以下脚本：
 
@@ -67,3 +76,21 @@ git submodule update --init --recursive
 1. 在 Visual Studio 中打开解决方案 `ClassIsland.sln`
 2. 将项目 `ClassIsland` 设置为启动项目
 3. 点击【启动】即可编译项目，并开始调试。
+
+
+
+对于 Mac ，可以通过脚本配置开发环境。
+
+> [!tip]
+> 在较新版本的 macOS 上，运行脚本可能需要授予访问权限
+
+在**终端**运行以下脚本：
+
+``` shell
+chmod +x ./tools/plugin/build.sh
+./tools/plugin/build.sh
+```
+
+脚本会安装`Homebrew`、`.NET SDK`、`.NET macOS 工作负载`、`Xcode Command Line Tools`，初始化 Git 子模块，并编译运行` ClassIsland.Desktop`
+
+安装环境配置完成后，可以在 Visual Studio Code 或 JetBrains Rider 中正常编译和运行 ClassIsland。
