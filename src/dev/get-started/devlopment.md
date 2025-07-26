@@ -5,7 +5,7 @@
 **首先确保您的系统满足以下要求：**
 
 - Windows 10 1803 及以上的操作系统，x86_64 或 ARM 架构
-- macOS Catalina 10.15 及以上的操作系统
+- 最低系统要求 macOS 12 Monterey ，推荐 macOS 14 Sonoma 及更高的系统版本
 
 对于 Windows PC ，要在本地进行开发，**您需要安装以下负载和工具**：
 
@@ -82,15 +82,19 @@ git submodule update --init --recursive
 对于 Mac ，可以通过脚本配置开发环境。
 
 > [!tip]
-> 在较新版本的 macOS 上，运行脚本可能需要授予访问权限
+> 在较新版本的 macOS 上，运行脚本可能需要授予访问权限。
 
 在**终端**运行以下脚本：
 
 ``` shell
-chmod +x ./tools/plugin/build.sh
-./tools/plugin/build.sh
+chmod +x ./tools/plugin/build_macos.sh
+./tools/plugin/build_macos.sh
 ```
 
 脚本会安装`Homebrew`、`.NET SDK`、`.NET macOS 工作负载`、`Xcode Command Line Tools`，初始化 Git 子模块，并编译运行` ClassIsland.Desktop`
 
 安装环境配置完成后，可以在 Visual Studio Code 或 JetBrains Rider 中正常编译和运行 ClassIsland。
+
+1. 在 Visual Studio Code 或 JetBrains Rider 中打开解决方案 `ClassIsland.Filter.MacOs.slnf`
+
+2. 修改、编译与运行代码
