@@ -84,17 +84,13 @@ git submodule update --init --recursive
 > [!tip]
 > 在较新版本的 macOS 上，运行脚本可能需要授予访问权限。
 
-在**终端**运行以下脚本：
+导航到``/ClassIsland/tools/plugin``，运行``build_macos.command``
 
-``` shell
-chmod +x ./tools/plugin/build_macos.sh
-./tools/plugin/build_macos.sh
-```
-
-脚本会安装`Homebrew`、`.NET SDK`、`.NET macOS 工作负载`、`Xcode Command Line Tools`，初始化 Git 子模块，并编译运行` ClassIsland.Desktop`
+脚本配置安装所需的环境。
 
 安装环境配置完成后，可以在 Visual Studio Code 或 JetBrains Rider 中正常编译和运行 ClassIsland。
 
 1. 在 Visual Studio Code 或 JetBrains Rider 中打开解决方案 `ClassIsland.Filter.MacOs.slnf`
 
 2. 修改、编译与运行代码
+
