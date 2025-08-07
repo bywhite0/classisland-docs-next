@@ -2,7 +2,7 @@
 
 这是 [ClassIsland](https://github.com/HelloWRC/ClassIsland) 文档仓库。本文档基于 [VuePress](https://vuejs.press/) 搭建
 
-[在线查看文档](https://classisland.github.io/classisland-docs-next/)
+[在线查看文档](https://docs.classisland.tech/)
 
 ## 开始编写文档
 
