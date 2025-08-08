@@ -102,8 +102,8 @@ export const zhSidebar = sidebar({
           collapsible: true,
           prefix: "get-started/",
           children: [
-            "devlopment.md",
-            "devlopment-plugins.md",
+            "development.md",
+            "development-plugins.md",
           ],
         },
         {
