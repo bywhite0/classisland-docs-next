@@ -20,13 +20,6 @@ tag:
 - Debian 9 / Ubuntu 16.04 LTS 或更高版本
 - 4GB 及以上的运行内存
 
-<<<<<<< HEAD
-> [!tip]
-> ClassIsland 2.0及以上版本将支持Linux和MacOS平台使用。
-> 目前，ClassIsland 2.0版本已经发布了预览版本（测试版本），可以在[Github](https://github.com/ClassIsland/ClassIsland/releases/)测试、体验，但是仍有部分功能无法使用，且可能存在潜在的严重bug，请勿在正式生产环境中使用测试版本。
-
-::: details 在 Windows 7 中安装 ClassIsland
-=======
 对于 Windows PC ，您需要安装 [.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.7-windows-x64-installer)
 
 ## 安装应用
@@ -34,7 +27,6 @@ tag:
 ### Windows 7
 
 在 Windows 7 中安装 ClassIsland
->>>>>>> aa676b8703814d9ac6587d35a19fc492c7338378
 
 > [!caution]
 > **不建议在 Windows 7 中使用 ClassIsland。**如果您执意要在 Windows 7 中使用 ClassIsland，请**务必按照以下步骤**完成准备工作，否则可能会出现**严重的内存泄漏问题**。（ ClassIsland#91 ）
