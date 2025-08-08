@@ -19,6 +19,10 @@ tag:
 - 已安装 [.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.1-windows-x64-installer)
 - 4GB 及以上的运行内存
 
+> [!tip]
+> ClassIsland 2.0及以上版本将支持Linux和MacOS平台使用。
+> 目前，ClassIsland 2.0版本已经发布了预览版本（测试版本），可以在[Github](https://github.com/ClassIsland/ClassIsland/releases/)测试、体验，但是仍有部分功能无法使用，且可能存在潜在的严重bug，请勿在正式生产环境中使用测试版本。
+
 ::: details 在 Windows 7 中安装 ClassIsland
 
 > [!caution]
