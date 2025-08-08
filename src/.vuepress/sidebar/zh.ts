@@ -42,6 +42,7 @@ export const zhSidebar = sidebar({
         },
         "component.md",
         "notifications.md",
+        "weather.md",
         "automation.md",
         "uri-navigation.md",
         "backup.md",
