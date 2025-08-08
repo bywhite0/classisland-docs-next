@@ -35,7 +35,8 @@ tag:
 对于普通用户，可以在以下渠道下载到本软件，请根据自身网络环境选择合适的渠道。
 
 - [**ClassIsland 官网（推荐）**](https://classisland.tech/download)
-- [GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases/latest)
+- [GitHub Releases 最新正式版](http://github.com/ClassIsland/ClassIsland/releases/latest)
+- [GitHub Releases 最新测试版（不建议在正式生产环境下使用）](http://github.com/ClassIsland/ClassIsland/releases)
 
 <a id="third-party-downloads"></a>
 ::: info 其它下载渠道
@@ -83,7 +84,7 @@ ClassIsland 支持 macOS Catalina 10.15 及更高版本，对应的硬件要求�
 
 ##### 下载应用本体
 
-目前的 ClassIsland for Mac 仍处于测试版本，您可前往[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
+目前的 ClassIsland for Mac 仍处于测试版本，您可前往[GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases)、[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
 
 ##### 安装
 
@@ -95,7 +96,7 @@ ClassIsland for Mac 采用 .pkg 安装包的形式分发，您在打开安装包
 
 #### 下载应用本体
 
-目前的 ClassIsland for Linux 仍处于测试版本，您可前往[GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases/latest)、[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
+目前的 ClassIsland for Linux 仍处于测试版本，您可前往[GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases)、[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
 
 #### 安装
 
