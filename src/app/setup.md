@@ -13,14 +13,16 @@ tag:
 
 ## 检查系统需求
 
-首先，确保您的设备满足以下推荐需求：
+首先，确保您的设备满足以下任意一条系统要求：
 
-- Windows 10 及以上版本的系统，x86_64 或 ARM 架构
+- Windows 10 及以上版本的系统，x86_64 或 ARM 架构，且安装了[.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.7-windows-x64-installer)
 - macOS Catalina 10.15 或更高版本
 - Debian 9 / Ubuntu 16.04 LTS 或更高版本
+
+除此以外，您的设备还需满足以下推荐性要求：
+
 - 4GB 及以上的运行内存
 
-对于 Windows PC ，您需要安装 [.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.7-windows-x64-installer)
 
 ## 安装应用
 
