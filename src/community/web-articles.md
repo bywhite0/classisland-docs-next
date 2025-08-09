@@ -7,7 +7,6 @@ icon: newspaper
 此处收集了互联网中的一些有关 ClassIsland 的文章和页面。
 
 <!--autocorrect-disable-->
-[ClassIsland —— 求闻百科](https://www.qiuwenbaike.cn/wiki/ClassIsland)
 
 [在教室的大屏上动态提醒课表，小巧、免费！—— 不坑老师](https://mp.weixin.qq.com/s?srcid=092144ZGGnyQJhSljuug09MK&scene=23&sharer_shareinfo=bcfe759fdd5096f88be775b14ac970f7&mid=2647691612&sn=d56af1a29dafb0c89495c3de118fddcc&idx=1&sharer_shareinfo_first=bcfe759fdd5096f88be775b14ac970f7&__biz=MjM5MDI4MzA3Mg%3D%3D&chksm=bf70a727e0de2bf5310ee29cdcbe9fb11bd5e425e6d124d12522599f5080387b67a49d22a76a&mpshare=1#rd)
 
