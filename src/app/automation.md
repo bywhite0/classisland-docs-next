@@ -172,4 +172,18 @@ tag:
 
 3. 在编辑完组件、自动化或档案后，请勿直接关机，这可能导致您的更改丢失。您需要手动关闭应用设置窗口（或手动退出 ClassIsland）以触发这些配置的保存。
 
+4. 自动化执行基本流程：
+
+```flow
+start=>start: 触发器被触发
+有无规则集=>condition: 检查是否启用规则集?
+是否符合规则集=>condition: 检查是否符合规则集?
+行动=>operation: 执行行动
+end=>end: 结束
+
+start->有无规则集(yes,right)->是否符合规则集(yes,bottom)->行动->end
+start->有无规则集(yes,right)->是否符合规则集(no,right)->end
+start->有无规则集(no,bottom)->行动->end
+```
+
 <!-- 该文档主要贡献者：HelloWRC、干冰DryIce、wang-lu-yuan、wjj-8283、nosoftcn等（不分先后） -->
