@@ -54,7 +54,7 @@ icon: code-commit
 
 您可以向本项目发起 [Pull Request](https://github.com/ClassIsland/classisland-docs-next/pulls) 来合并您的更改。在发起 Pull Request 时，请简要地描述您做的更改。
 
-更改合并以后，您可以在 [最新版文档](https://classisland.github.io/classisland-docs-next/) 中看到您的更改。
+更改合并以后，您可以在 [最新版文档](https://docs.classisland.tech/) 中看到您的更改。
 
 ## 还有疑问？
 
