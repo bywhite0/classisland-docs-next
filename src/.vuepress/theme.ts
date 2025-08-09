@@ -101,6 +101,7 @@ export default hopeTheme({
     vPre: true,
     imgSize: true,
     obsidianImgSize: true,
+    imgMark: true,
 
     // insert component easily
 
