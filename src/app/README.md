@@ -21,8 +21,11 @@ category:
     - [课表](profile/classplan.md)
     - [时间表](profile/time-layout.md)
     - [科目](profile/subject.md)
+- [组件](component.md)
 - [提醒](notifications.md)
+- [天气](weather.md)
 - [自动化](automation.md)
+- [插件](plugin.md)
 - [Uri 导航](uri-navigation.md)
 - [应用数据备份](backup.md)
 
