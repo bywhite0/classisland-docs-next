@@ -8,6 +8,12 @@ tag:
 
 # 插件
 
+::: info ClassIsland 欢迎您参与完善本条目☆Kira~
+
+欢迎正在阅读这个条目的您协助编辑本条目。编辑前请阅读[条目编辑规范](../community/contributing.html)，并查找相关资料。ClassIsland 祝您在本文档度过愉快的时光。
+
+:::
+
 ClassIsland1.5及以上版本支持了插件功能，您可以在[设置—【插件】](classisland://app/settings/classisland.plugins/)的“插件市场”页面中寻找插件安装使用。
 
 ::: warning 第三方服务
