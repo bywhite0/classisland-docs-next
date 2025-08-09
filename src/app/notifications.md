@@ -31,7 +31,7 @@ tag:
 
 您可以在[【设置】->【提醒】](classisland://app/settings/notification)中调整相关提醒的设置。
 
-![1694923983253](image/Notifications/1694923983253.png)
+![2.0:提醒设置](\image\Notifications\2.0提醒设置.png)
 
 ## 提醒优先级
 
