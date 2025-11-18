@@ -5,5 +5,10 @@ export const zhNavbar = navbar([
   "/app/",
   "/management/",
   "/dev/",
-  "/community/"
+  "/community/",
+  {
+    "text": "1.7 文档（旧版）",
+    "link": "https://docs-v1.classisland.tech/",
+    "icon": "fa-solid fa-book"
+  }
 ]);
