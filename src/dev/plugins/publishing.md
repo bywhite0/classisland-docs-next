@@ -58,15 +58,17 @@ Compress-Archive -Path "（你的插件编译输出目录，如 E:\xxx\MyPlugin\
 
 以下是需要补充的信息：
 
-| 属性名 | 类型 | 必填？ | 说明 |
-| -- | -- | -- | -- |
-| repoOwner | `string` | **是** | 插件的 GitHub 仓库所有者 |
-| repoName | `string` | **是** | 插件的 GitHub 仓库名称 |
-| assetsRoot | `string` | **是** | 插件的资源根目录，格式为`<默认分支>/<插件项目相对存储库的路径>`，例如`master/ExamplePlugin`。 |
+| 属性名 | 类型 | 必填？ | 说明 | 示例
+| -- | -- | -- | -- | -- |
+| repoOwner | `string` | **是** | 插件的 GitHub 仓库所有者 | ClassIsland
+| repoName | `string` | **是** | 插件的 GitHub 仓库名称 | ExamplePlugins
+| assetsRoot | `string` | **是** | 插件的资源根目录，格式为`<默认分支>/<插件项目相对存储库的路径>` | master/ExamplePlugin
+| artifactName | `string` | 否 | 指定插件 Release 中给用户要下载的插件包的工件名称，否则索引生成器将匹配第一个以`.cipx`为后缀的工件 | plugin.cipx
+| tagPattern | `string` | 否 | 查找最新发行版时要匹配的 Tag 模式。如果设置，将查找匹配符合这个模式的 Tag，否则将使用最新的符合格式的 Tag | 1.\*.\*\*
 
 例如：
 
-```yaml title="classisland.example.yml" hl_lines="6-8"
+```yaml title="classisland.example.yml" hl_lines="6-10"
 id: classisland.example
 name: 示例插件
 description: 插件描述
@@ -75,6 +77,8 @@ url: https://github.com/ClassIsland/ClassIsland
 repoOwner: ClassIsland
 repoName: ExamplePlugins
 assetsRoot: master/HelloWorldPlugin
+artifactName: plugin.cipx
+tagPattern: 1.*.**
 
 ```
 
@@ -105,6 +109,33 @@ assetsRoot: master/HelloWorldPlugin
    其中被注释标签包裹的 json 对象是一个以文件名为键，MD5 值为值的字典。如果有多个文件，可以扩充此字典。
 :::
 
-补充后的插件清单文件需要重命名为插件 id，并上传到[插件源仓库]根目录下的[`index`](https://github.com/ClassIsland/PluginIndex/tree/main/index)文件夹中。
+补充后的插件清单文件需要重命名为插件 id，并上传到[插件源仓库]根目录下的[`index/plugins-v2`](https://github.com/ClassIsland/PluginIndex/tree/main/index/plugins-v2)文件夹中。
+
+> [!note]
+> 您按照本方法上架的插件只会出现在 2.x 的插件市场中。要了解如何将您的插件上架到 1.x 的插件市场，[请见下文](#同时发布兼容-classisland-1x-和-classisland-2x-的插件)。
 
 上传完成后，需要向源仓库发起 PR。您的插件将被审核，插件审核通过后即可进入插件市场。相关的下载信息将根据插件清单中的信息添加到插件源中。
+
+## 同时发布兼容 ClassIsland 1.x 和 ClassIsland 2.x 的插件
+
+您可以在将您的插件清单文件添加到 2.x 插件索引目录[`index/plugins-v2`](https://github.com/ClassIsland/PluginIndex/tree/main/index/plugins-v2)的同时将您的插件索引清单文件添加到 1.x 的索引目录[`index/plugins`](https://github.com/ClassIsland/PluginIndex/tree/main/index/plugins)中，实现同时在 1.x 和 2.x 的插件市场上架您的插件。
+
+如果您同时在 Releases 中发布了面向 2.x 版本的 ClassIsland 插件，为了在 1.x 的版本的 ClassIsland 插件市场中下载到支持 1.x ClassIsland 版本的插件，您可能也需要在 1.x 插件索引中的插件清单中指定 `tagPattern` 属性，告诉索引生成器要使用的 Release。例如：
+
+```yaml title="classisland.example.yml" hl_lines="10"
+id: classisland.example
+name: 示例插件
+description: 插件描述
+entranceAssembly: "ClassIsland.ExamplePlugin.dll"
+url: https://github.com/ClassIsland/ClassIsland
+repoOwner: ClassIsland
+repoName: ExamplePlugins
+assetsRoot: master/HelloWorldPlugin
+artifactName: plugin.cipx
+tagPattern: 1.*.**
+
+```
+
+在这个清单文件中我们设置了 `1.*.**` 的 Tag 模式，这样生成索引的时候就会使用符合这个模式的 Tag 的 Release，用户从 1.x 的插件市场中下载插件时就会从这个 Release 下载。
+
+同理，如果有需要，我们也可以为添加到 2.x 版本的插件索引的清单文件规定要使用的 Release 的 Tag 模式。
