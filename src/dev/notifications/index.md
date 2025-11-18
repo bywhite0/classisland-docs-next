@@ -34,7 +34,7 @@ using Microsoft.Extensions.Hosting;
 namespace PluginWithNotificationProviders.Services.NotificationProviders;
 
 [NotificationProviderInfo("DD3BC389-BEA9-40B7-912B-C7C37390A101", "示例提醒提供方", PackIconKind.Airplane, "提醒提供方说明")]
-public class ActionNotificationProvider : NotificationProviderBase {
+public class MyNotificationSettings : NotificationProviderBase {
     
 }
 ```
@@ -87,7 +87,7 @@ services.AddNotificationProvider<MyNotificationProvider>();
 namespace PluginWithNotificationProviders.Services.NotificationProviders;
 
 [NotificationProviderInfo("DD3BC389-BEA9-40B7-912B-C7C37390A101", "示例提醒提供方", PackIconKind.Airplane, "提醒提供方说明")]
-public class ActionNotificationProvider : NotificationProviderBase {
+public class MyNotificationSettings : NotificationProviderBase {
     public ILessonsService LessonsService { get; }
 
     public MyNotificationProvider(ILessonsService lessonsService)
@@ -140,7 +140,7 @@ graph LR
 
 ``` csharp title="Services/NotificationProviders/MyNotificationProvider.cs" 
 // ...
-public class ActionNotificationProvider : NotificationProviderBase {
+public class MyNotificationSettings : NotificationProviderBase {
     // ...
 
     private void LessonsServiceOnOnBreakingTime(object? sender, EventArgs e)

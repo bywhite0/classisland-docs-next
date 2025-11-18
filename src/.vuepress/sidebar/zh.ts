@@ -128,6 +128,7 @@ export const zhSidebar = sidebar({
           children: [
             "index.md",
             "notification-content.md",
+            "notification-channels.md",
             "advanced.md",
           ],
         },
