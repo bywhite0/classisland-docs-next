@@ -63,7 +63,7 @@ ClassIsland（`class island`）是一款适用于班级多媒体屏幕的课表�
   />
   <VPCard
     title="开发文档"
-    desc="查看 ClassIsland 的技术细节，了解如何参与 ClassIsland 相关的开发。"
+    desc="查看 ClassIsland 的技术细节，了解如何参与 ClassIsland 及其插件的开发。"
     link="./dev/"
   />
   <VPCard

@@ -2,6 +2,16 @@
 
 这些是用户通常可以自行解决的问题，您可以通过下方的目录或搜索功能快速检索您遇到的问题。
 
+::: tip 测试版本使用须知
+
+ClassIsland 会在 Github Releases 发布新版本的“测试版本”（“预览版本”）。这些版本尚不成熟，可能存在一些未知的问题，其中有些问题可能还会很严重，影响您的使用。
+
+如果遇到本页面未提到的问题，您还可以在[Github Discussions](https://github.com/ClassIsland/ClassIsland/discussions)里看看有没有类似的提问。
+
+如果该问题此前从未被提及，请您辨别该问题是【程序bug所致】、【操作不当或不会操作所致】、【程序功能缺乏优化补充所致】中的哪一种，并分别在[【Issues — Bug反馈】](https://github.com/ClassIsland/ClassIsland/issues/new?template=BugReport.yml)、[【Discussions — Q&A】](https://github.com/ClassIsland/ClassIsland/discussions/new?category=q-a)、[【Issues — 功能请求】](https://github.com/ClassIsland/ClassIsland/issues/new?template=FeatureRequest.yml)提出。
+
+:::
+
 [[TOC]]
 
 ## 安装
