@@ -70,8 +70,8 @@ export const enSidebar = sidebar({
           text: "Getting Started",
           prefix: "get-started/",
           children: [
-            "devlopment.md",
-            "devlopment-plugins.md",
+            "development.md",
+            "development-plugins.md",
           ],
         },
         {
