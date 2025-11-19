@@ -16,7 +16,7 @@ tag:
 首先，确保您的设备满足以下任意一条系统要求：
 
 - Windows 10 及以上版本的系统，x86_64 或 ARM 架构，且安装了[.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.7-windows-x64-installer)
-- macOS Catalina 10.15 或更高版本
+- macOS Big Sur 11 或更高版本
 - Debian 9 / Ubuntu 16.04 LTS 或更高版本
 
 除此以外，您的设备还需满足以下推荐性要求：
