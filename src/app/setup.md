@@ -17,29 +17,31 @@ tag:
 
 - Windows 10 及以上版本的系统，x86_64 或 ARM 架构，且安装了[.NET 8.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-8.0.7-windows-x64-installer)
 - macOS Big Sur 11 或更高版本
-- Debian 9 / Ubuntu 16.04 LTS 或更高版本
+- Debian 10（或其衍生版本）或更高版本
 
 除此以外，您的设备还需满足以下推荐性要求：
 
 - 4GB 及以上的运行内存
 
+## 下载应用本体
 
-## 安装应用
+::: note 高级
 
-:::: tabs
+如果您想体验最新的功能，可以前往[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载包含最新功能的构建。如果您想自行构建 ClassIsland，请参考[开发文档](../dev/get-started/devlopment.md)。
+:::
 
-@tab Windows 10 或 Windows 11
+您可以通过多种渠道下载到 ClassIsland。
 
-#### 下载应用本体
+### 官网下载（推荐）
 
-对于普通用户，可以在以下渠道下载到本软件，请根据自身网络环境选择合适的渠道。
+对于普通用户，可以在以下渠道下载到本应用，请根据自身网络环境选择合适的渠道。
 
 - [**ClassIsland 官网（推荐）**](https://classisland.tech/download)
 - [GitHub Releases 最新正式版](http://github.com/ClassIsland/ClassIsland/releases/latest)
 - [GitHub Releases 最新测试版（不建议在正式生产环境下使用）](http://github.com/ClassIsland/ClassIsland/releases)
 
 <a id="third-party-downloads"></a>
-::: info 其它下载渠道
+::: note 其它下载渠道
 
 如果您的网络环境不支持您从以上渠道下载，您可以通过下列的非官方镜像下载，然后通过内置的应用更新升级到最新版本。
 
@@ -51,16 +53,24 @@ tag:
 感谢以上提供镜像的同学。
 :::
 
-::: info 高级
+### 应用市场下载
 
-如果您想体验最新的功能，可以前往[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载包含最新功能的构建。如果您想自行构建 ClassIsland，请参考[开发文档](../dev/get-started/devlopment.md)。
-:::
+您也可以在以下应用市场搜索“ClassIsland”下载本应用：
 
-#### 完整版 vs 精简版
+- UOS 应用商店
 
-如果您使用 GitHub 下载，您可以选择下载 ClassIsland 的完整版或精简版。文件名为`ClassIsland.zip`的构建是完整版；文件名为`ClassIsland_AssetsTrimmed.zip`的构建是 ClassIsland 的精简版，移除了不必要的资源文件（字体、文档等）以缩小应用体积，同时功能保持不变。
+### 包管理器下载
 
-#### 解压软件
+您也可以在支持的操作系统上安装以下社区维护的包来安装本应用：
+
+- [classisland-bin](https://aur.archlinux.org/packages/classisland-bin)^AUR^
+- [classisland](https://aur.archlinux.org/packages/classisland)^AUR^
+
+## 安装应用
+
+:::: tabs
+
+@tab Windows / Linux 便携版
 
 下载完成后，将软件压缩包解压到一个**独立的文件夹（运行路径不能有中文 [^2]）**，运行软件即可开始使用。
 
@@ -70,72 +80,23 @@ tag:
 本软件会在该文件夹中储存所有配置。在配置完成后，您可以直接将该文件夹带到学校使用。
 :::
 
-@tab macOS
-
-ClassIsland 支持 macOS Catalina 10.15 及更高版本，对应的硬件要求为
-
-- MacBook (2015 年前期或之后的机型)
-- MacBook Air (2012 年中期或之后的机型)
-- MacBook Pro (2012 年中期或之后的机型)
-- Mac mini (2012 年后期或之后的机型)
-- iMac (2012 年后期或之后的机型)
-- iMac Pro (2017 年)
-- Mac Pro (2013 年后期或之后的机型)
-
-##### 下载应用本体
-
-目前的 ClassIsland for Mac 仍处于测试版本，您可前往[GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases)、[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
-
-##### 安装
+@tab macOS 安装版（.pkg）
 
 ClassIsland for Mac 采用 .pkg 安装包的形式分发，您在打开安装包后根据指引即可完成安装。
 
-@tab Linux
+@tab Linux 安装版（.deb）
 
-要在 Linux 中安装并运行本应用，需要 X11 桌面环境、 2.23 或更高版本的 glibc 。不支持 XWayland 或 Wayland。在开始安装前请首先确认您的设备是否满足最低要求。
+ClassIsland for Linux 采用 .deb 安装包的形式分发，您在打开安装包后根据指引即可完成安装。在部分系统（如统信 UOS 上）您可能需要启用开发者模式才能从 .deb 包安装 ClassIsland。
 
-#### 下载应用本体
+您也可以使用以下命令安装 ClassIsland:
 
-目前的 ClassIsland for Linux 仍处于测试版本，您可前往[GitHub Releases](http://github.com/ClassIsland/ClassIsland/releases)、[GitHub Actions](https://github.com/ClassIsland/ClassIsland/actions/workflows/build_release.yml)下载或自行编译应用本体。
+``` bash
+sudo apt install ./你实际下载的文件名.deb
+```
 
-#### 安装
+@tab Windows 7（不支持）
 
-ClassIsland for Linux 采用 .deb 安装包的形式分发，您在打开安装包后根据指引即可完成安装。
-
-@tab Windows 7（不推荐）
-
-在 Windows 7 中安装 ClassIsland
-
-> [!caution]
-> **不建议在 Windows 7 中使用 ClassIsland。**如果您执意要在 Windows 7 中使用 ClassIsland，请**务必按照以下步骤**完成准备工作，否则可能会出现**严重的内存泄漏问题**。（ ClassIsland#91 ）
-
-> [!caution]
-> 如果您之前使用了设置环境变量或运行修复工具的方式使 ClassIsland 可以在 Windows 7 上运行，请按照[此文章](./appendix/revert-win7-patching.md)的指引回滚修复操作，因为此方法可能会引起部分 .NET Core 应用不兼容。
-
-此外，**微软对 Windows 7 的支持已经在 2020/1/14 终止** [^1]。如果您在 Windows 7 中遇到系统相关问题， **开发者可能不会受理。** 并且在 Windows 10 以下的系统中，部分功能可能不可用。如果您接受这些缺陷，请继续阅读下文。
-
-#### 关于 .NET 6 兼容版
-
-为了使 ClassIsland 正常在 Windows 10 以下的低版本系统运行，我们制作了 .NET 6 兼容版本。此兼容版本会不定期与上游主仓库同步。您可以在[此处](https://github.com/ClassIsland/ClassIsland-net6/)查看兼容版仓库。
-
-以下功能在此兼容版不可用：
-
-- 插件功能
-
-#### 安装
-
-1. **安装依赖项**
-
-    您需要按照[此处](https://learn.microsoft.com/zh-cn/dotnet/core/install/windows?tabs=net60#additional-deps)的指引根据您的操作系统版本安装额外的依赖项。
-
-    对于 Windows 7，以下是您需要额外安装的依赖项：
-
-    - Microsoft Visual C++ 2015-2019 Redistributable [64 位](https://aka.ms/vs/16/release/vc_redist.x64.exe) / [32 位](https://aka.ms/vs/16/release/vc_redist.x86.exe)
-    - KB3063858 [64 位](https://www.microsoft.com/download/details.aspx?id=47442) / [32 位](https://www.microsoft.com/download/details.aspx?id=47409)
-
-2. 安装 [.NET 6 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-desktop-6.0.33-windows-x64-installer)。
-3. 前往 [ClassIsland 官网](https://classisland.tech/download)下载 Windows 7 兼容版的 ClassIsland。
-
+ClassIsland 2 不支持在 Windows 7 上运行。
 
 ::::
 
