@@ -19,9 +19,12 @@ tag:
 - macOS Big Sur 11 或更高版本
 - Debian 10（或其衍生版本）或更高版本
 
+
 除此以外，您的设备还需满足以下推荐性要求：
 
 - 4GB 及以上的运行内存
+
+ClassIsland 的部分功能只在部分平台上可用，详细可见文章[平台功能](./appendix/platforms.md)。
 
 ## 下载应用本体
 

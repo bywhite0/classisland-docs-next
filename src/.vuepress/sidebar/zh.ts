@@ -64,6 +64,7 @@ export const zhSidebar = sidebar({
           collapsible: true,
           prefix: "appendix/",
           children: [
+            "platforms.md",
             "revert-win7-patching.md",
           ],
           icon: "fa-solid fa-book"
