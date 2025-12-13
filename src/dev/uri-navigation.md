@@ -12,7 +12,7 @@ ClassIsland 的 Uri 导航协议是 `classisland://`。
 
 ## 注册导航
 
-要注册导航，您首先需要获取服务 `ClassIsland.Core.Abstractions.Services.IUriNavigationService`。获取服务的详细方法见[基础知识](basics.md#dependency-injection)。
+要注册导航，您首先需要获取服务 `ClassIsland.Core.Abstractions.Services.IUriNavigationService`。获取服务的详细方法见[依赖注入](basics/dependency-injection.md)。
 
 ::: info
 在本文的代码中，我们假定将获取到的服务存储在了属性 `UriNavigationService` 中。

@@ -14,15 +14,15 @@ category:
 ClassIsland 使用了如下技术栈。在参与 ClassIsland 开发或为 ClassIsland 开发插件等配套工具时，您最好对以下内容有基本的了解。
 
 - 本项目基于 [.NET 8](https://learn.microsoft.com/zh-cn/dotnet/core/introduction) 开发，使用 [C#](https://learn.microsoft.com/zh-cn/dotnet/csharp/) 作为编程语言。
-- 本项目使用了 WPF 作为 UI 框架，并使用了 [MaterialDesignInXamlToolkit](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit) 主题。
+- 本项目使用了 [Avalonia](https://avaloniaui.net/) 作为 UI 框架，并使用了 [FluentAvalonia](https://github.com/amwx/FluentAvalonia) 主题。
 - 本项目使用了控制反转（IoC）容器[Microsoft.Extensions.Hosting](https://learn.microsoft.com/zh-cn/dotnet/core/extensions/generic-host)作为依赖注入的实现。
 
 **在开发时您可以参考以下的资源：**
 
 - 本开发文档；
 - [ClassIsland 源代码](https://github.com/ClassIsland/ClassIsland)：ClassIsland 源码在开发插件时还是很有参考价值的，可以增加对 API 的理解。
-- [MaterialDesignInXamlToolkit 的 Wiki](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/wiki)和[源代码](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/)：这些资源在进行主题自定义时是很有用的；
-- [MaterialDesignInXamlToolkit Demo 应用](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/releases/download/v4.8.0/DemoApp.zip)：这个应用可以快速查阅 MaterialDesignInXamlToolkit 的控件，在开发时还是比较方便的。
+- [FluentAvalonia 的文档](https://amwx.github.io/FluentAvaloniaDocs/)和[源代码](hhttps://github.com/ClassIsland/ClassIsland)：这些资源在进行主题自定义时是很有用的；
+- FluentAvalonia Demo 应用：这个应用可以快速查阅 FluentAvalonia 的控件，在开发时还是比较方便的。
 
 如果您打算向 ClassIsland 做出代码贡献，**请务必先阅读 [贡献指南](https://github.com/ClassIsland/ClassIsland/blob/master/CONTRIBUTING.md)。**
 
@@ -38,6 +38,7 @@ ClassIsland 使用了如下技术栈。在参与 ClassIsland 开发或为 ClassI
 
 - [配置 ClassIsland **本体**开发环境](./get-started/development.md)
 - [配置 ClassIsland **插件**开发环境](./get-started/development-plugins.md)
+- [了解有关 ClassIsland 开发的基础知识](basics/README.md)
 
 ## 调试菜单
 
@@ -63,7 +64,8 @@ ClassIsland 使用了如下技术栈。在参与 ClassIsland 开发或为 ClassI
     - [插件基础知识](./plugins/basics.md)
     - [插件入口类](./plugins/plugin-base.md)
     - [发布插件](./plugins/publishing.md)
-- [基础知识](basics.md)
+- [**基础知识**](basics/README.md)
+    - [依赖注入](basics/dependency-injection.md)
 - [事件](events.md)
 - [Uri 导航](uri-navigation.md)
 - 内置控件

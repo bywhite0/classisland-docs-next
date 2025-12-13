@@ -9,7 +9,7 @@
 要在本地进行开发，**您需要安装以下负载和工具**：
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)，包括【.NET 桌面开发】工作负载
+- [JetBrains Rider（建议）](https://www.jetbrains.com/zh-cn/rider/) 或 [Visual Studio 2022](https://visualstudio.microsoft.com/)，包括【.NET 桌面开发】工作负载
 - [Git](https://git-scm.com/)
 - [Powershell Core](https://github.com/PowerShell/PowerShell)
 
@@ -75,7 +75,7 @@ git checkout 1.5.0.2
 > [!warning]
 > 运行此脚本后，请重启 Visual Studio 等开发工具，以更新相关环境变量。
 
-这个脚本会自动清理上次的构建，进行构建并设置相关的环境变量。这样就获得了 ClassIsland 的 Debug 构建。构建默认输出在 `（项目文件夹\ClassIsland\bin\Debug\net8.0-windows）`下。
+这个脚本会自动清理上次的构建，进行构建并设置相关的环境变量。这样就获得了 ClassIsland 的 Debug 构建。构建默认输出在 `（项目文件夹\ClassIsland.Desktop\bin\Debug\net8.0-windows）`下。
 
 ## 更新
 
