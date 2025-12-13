@@ -15,7 +15,7 @@ ClassIsland 的[大部分公开 API 服务](https://api.docs.classisland.tech/ap
 您可以调用 [IAppHost.GetService](https://api.docs.classisland.tech/api/ClassIsland.Shared.IAppHost.html#ClassIsland_Shared_IAppHost_GetService__1) 方法通过服务类型或服务的抽象类型来在应用任何地方快速获取一个服务，如以下代码：
 
 ``` csharp
-var service = IAppHost.GetService<ILessonService>();
+var service = IAppHost.GetService<ILessonsService>();
 ```
 
 以上代码通过课程服务的抽象接口[`ILessonsService`](https://api.docs.classisland.tech/api/ClassIsland.Core.Abstractions.Services.ILessonsService.html)获取到了课程服务，并将其存储在变量 `service` 中。同理，如果该服务是直接以具体的类类型（而非接口）注册的，您也可以直接使用该类类型来获取服务。
@@ -23,7 +23,7 @@ var service = IAppHost.GetService<ILessonService>();
 如果您不确定此服务有没有注册，可以使用[IAppHost.TryGetService](https://api.docs.classisland.tech/api/ClassIsland.Shared.IAppHost.html#ClassIsland_Shared_IAppHost_TryGetService__1)方法尝试获取服务，当获取失败时，会返回 `null` 而非抛出异常，例如：
 
 ``` csharp
-var service = IAppHost.TryGetService<ILessonService>();
+var service = IAppHost.TryGetService<ILessonsService>();
 ```
 
 此时如果抽象接口[`ILessonsService`](https://api.docs.classisland.tech/api/ClassIsland.Core.Abstractions.Services.ILessonsService.html)对应的服务没有被注册，变量 `service` 将为 `null`。
