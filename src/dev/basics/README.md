@@ -2,6 +2,12 @@
 
 本文将介绍在进行 ClassIsland 相关开发时需要了解的一部分基础概念。
 
+<a id="dependency-injection"></a>
+
+## 依赖注入
+
+ClassIsland 使用了依赖注入设计模式，在开始 ClassIsland 本体或插件开发前我们强烈建议您先了解[ClassIsland 中的依赖注入](./dependency-injection.md)。
+
 <a id="xml-namespace"></a>
 
 ## XML 命名空间
@@ -38,13 +44,3 @@
     <!-- ... -->
 </ci:MyWindow >
 ```
-
-<a id="dependency-injection"></a>
-
-## 依赖注入
-
-ClassIsland 使用了依赖注入设计模式。在定义一个服务时，您可以在服务的构造函数参数中指定要引用的服务依赖项，主机会在构造服务时自动传入依赖项。
-
-要了解关于依赖注入的更多内容，请参阅[.NET 依赖项注入](https://learn.microsoft.com/zh-cn/dotnet/core/extensions/dependency-injection)。这篇文档会更详细地介绍 .NET 中依赖注入的相关信息。
-
-如果您正在开发 ClassIsland 的插件，您还应该留意文档[插件基础知识](./plugins/basics.md#依赖注入) 的依赖注入章节中，与在开发应用本体中不同的操作。

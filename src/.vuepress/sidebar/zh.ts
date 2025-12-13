@@ -110,6 +110,15 @@ export const zhSidebar = sidebar({
           ],
         },
         {
+          text: "基础知识",
+          collapsible: true,
+          prefix: "basics/",
+          children: [
+            "README.md",
+            "dependency-injection.md",
+          ]
+        },
+        {
           text: "插件",
           collapsible: true,
           prefix: "plugins/",
@@ -121,7 +130,6 @@ export const zhSidebar = sidebar({
             "publishing.md",
           ],
         },
-        "basics.md",
         "events.md",
         "uri-navigation.md",
         "components.md",
