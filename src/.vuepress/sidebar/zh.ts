@@ -162,14 +162,6 @@ export const zhSidebar = sidebar({
           prefix: "legacy/",
           children: [
             "README.md",
-            {
-              text: "提醒（旧版）",
-              collapsible: true,
-              prefix: "notifications/",
-              children: [
-                "README.md",
-              ]
-            },
           ]
         },
         {
