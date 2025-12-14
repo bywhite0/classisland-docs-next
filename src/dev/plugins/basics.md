@@ -1,6 +1,6 @@
 # 插件基础知识
 
-这里是在 [ClassIsland 开发基础](../basics.md)的基础上，开发插件时还需要注意的事项。
+这里是在 [ClassIsland 开发基础](../basics/README.md)的基础上，开发插件时还需要注意的事项。
 
 ## 程序集隔离
 
@@ -12,16 +12,16 @@
 
 ## 资源引用
 
-在插件中引用插件程序集内的资源时，需要使用绝对路径，否则会将路径解析至 ClassIsland 本体的程序集。例如：
+在插件中引用插件程序集内的资源时，需要使用绝对路径，例如：
 
 ``` plaintext
-pack://application:,,,/程序集名称;;;component/资源路径
-pack://application:,,,/ExamplePlugin;;;component/Assets/Image.png
+avares://程序集名称/资源路径
+avares://ExamplePlugin/Assets/Image.png
 ```
 
 ## 依赖注入
 
-在 [ClassIsland 开发基础](../basics.md#依赖注入) 所描述的基础上，插件需要在入口点的 `Initialize` 方法内完成相关注册操作。例如：
+在 [依赖注入中的“注册服务”章节](../basics/dependency-injection.md#注册服务) 所描述的基础上，插件需要在入口点的 `Initialize` 方法内完成相关注册操作。例如：
 
 ```csharp
 // ...
@@ -41,7 +41,7 @@ public class Plugin : PluginBase
 
 ## 访问 Application 对象
 
-ClassIsland 的应用程序类（App）基于封装后的 `System.Windows.Application` 类 `ClassIsland.Core.AppBase`。AppBase 类在源 Application 的基础上，向插件暴露了一些[生命周期事件](../events.md#应用生命周期事件)和控制生命周期状态的方法。
+ClassIsland 的应用程序类（App）基于封装后的 `Avalonia.Application` 类 `ClassIsland.Core.AppBase`。AppBase 类在源 Application 的基础上，向插件暴露了一些[生命周期事件](../events.md#应用生命周期事件)和控制生命周期状态的方法。
 
 您可以通过 `ClassIsland.Core.AppBase` 的 `Current` 属性获取当前 Application 实例。
 

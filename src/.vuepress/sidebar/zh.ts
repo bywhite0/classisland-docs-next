@@ -110,6 +110,14 @@ export const zhSidebar = sidebar({
           ],
         },
         {
+          text: "有过开发经验？",
+          collapsible: true,
+          prefix: "dev-migrate/",
+          children: [
+            "README.md",
+          ],
+        },
+        {
           text: "基础知识",
           collapsible: true,
           prefix: "basics/",

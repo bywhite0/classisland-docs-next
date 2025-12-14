@@ -162,7 +162,7 @@ using System.Windows;
 创建 `Themes/Generic.xaml`，并写入以下内容，引用主题资源字典：
 
 ``` xml title="Themes/Generic.xaml"
-<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="pack://application:,,,/ClassIsland.Core;;;component/ThemeBase.xaml"/>

@@ -10,7 +10,7 @@
 
 ``` xml hl_lines="3"
 <ci:MyWindow x:Class="ClassIsland.Views.FeatureDebugWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns="https://github.com/avaloniaui"
         xmlns:ci="http://classisland.tech/schemas/xaml/core">
     <!-- ... -->
 </ci:MyWindow >
@@ -32,7 +32,7 @@
 
 ``` xml hl_lines="4"
 <ci:MyWindow x:Class="ClassIsland.Views.FeatureDebugWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns="https://github.com/avaloniaui"
         xmlns:ci="http://classisland.tech/schemas/xaml/core"
         xmlns:controls="clr-namespace:ClassIsland.Controls">
     <!-- ... -->

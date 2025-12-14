@@ -1,6 +1,6 @@
 # 插件入口类
 
-ClassIsland 的插件需要定义一个插件入口类，插件入口类需要继承`PluginBase`抽象类，并添加`PluginEntrance`属性。下面是一个插件入口的示例：
+ClassIsland 的插件需要定义一个插件入口类，插件入口类需要继承`PluginBase`抽象类，并添加`PluginEntrance`属性。如果您通过模板创建了 ClassIsland 插件，模板已经给您预先定义好了插件入口点。下面是一个插件入口的示例：
 
 ```csharp title="Plugin.cs"
 using ClassIsland.Core.Abstractions;
@@ -22,7 +22,30 @@ public class Plugin : PluginBase
 
 在上面的代码中，我们定义了一个名为`Plugin`的类，并继承了 `PluginBase`抽象类。同时为`Plugin`类添加了`PluginEntrance`属性，以声明这个类是插件入口类。
 
-这个插件入口类也会在初始化时添加到 IoC 主机上，您可以在插件注册的服务中通过依赖注入获取插件入口类实例。
+这个插件入口类也会在初始化时添加到 IoC 主机上，您可以在插件注册的服务中通过依赖注入获取插件入口类实例，例如：
+
+:::: tabs
+
+@tab 服务定位器法
+
+``` csharp
+var plugin = IAppHost.GetService<Plugin>();  // 这里的 Plugin 是您的入口点的实际类名
+```
+
+@tab 构造函数注入法
+
+``` csharp
+// 这里的 Plugin 是您的入口点的实际类名
+public class Demiurge(Plugin plugin) {
+    private Plugin Plugin { get; } = plugin;
+
+    private void DoSomething() {
+        // 此时我们可以通过 Plugin 属性访问到当前插件入口点实例了
+    }
+}
+```
+
+::::
 
 ## 初始化方法
 
@@ -63,6 +86,8 @@ public class Plugin : PluginBase
 
 }
 ```
+
+您也可以在此方法向主机注册服务，详细见[依赖注入](../basics/dependency-injection.md#注册服务)文章。
 
 ::: note
 有些注册操作需要在主机启动后进行，由于初始化方法在主机启动前执行，所以可以通过订阅[`AppBase.AppStarted`](../events.md#应用启动完成-appstarted)事件，在应用启动完成后进行注册。

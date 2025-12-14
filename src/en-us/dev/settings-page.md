@@ -9,7 +9,7 @@ ClassIsland 允许插件在设置窗口注册自定义的设置页面。本文�
 ```xml title="ExampleSettingsPage.xaml" hl_lines="1 4"
 <ci:SettingsPageBase 
       x:Class="PluginWithSettingsPage.Views.SettingsPages.ExampleSettingsPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns="https://github.com/avaloniaui"
       xmlns:ci="http://classisland.tech/schemas/xaml/core"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -40,7 +40,7 @@ public partial class ExampleSettingsPage : SettingsPageBase
 
 ```xml title="ExampleSettingsPage.xaml" hl_lines="11-17"
 <ci:SettingsPageBase x:Class="PluginWithSettingsPage.Views.SettingsPages.ExampleSettingsPage"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns="https://github.com/avaloniaui"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 

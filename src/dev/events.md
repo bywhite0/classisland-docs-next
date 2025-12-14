@@ -73,7 +73,7 @@ app.AppStarted += (o, e) => Console.WriteLine("AppStarted");
 
 ## 主计时器事件
 
-这些事件会每隔 50ms 触发一次，适用于进行轮询操作。要订阅这些事件，需要按照[基础知识](./basics.md#依赖注入)文档中关于依赖注入的文档获取 `ClassIsland.Core.Abstractions.Services.ILessonsService` 服务。
+这些事件会每隔 50ms 触发一次，适用于进行轮询操作。要订阅这些事件，需要按照[基础知识](./basics/dependency-injection.md)文档中关于依赖注入的文档获取 `ClassIsland.Core.Abstractions.Services.ILessonsService` 服务。
 
 ### 课表处理前事件
 
